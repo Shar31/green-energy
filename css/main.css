@@ -1,0 +1,223 @@
+/* Analogous Color Scheme for Green Energy */
+/* Color 1: #66BB6A (Light Green) */
+/* Color 2: #43A047 (Medium Green) */
+/* Color 3: #1B5E20 (Dark Green) */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0.75rem; /* Mobile font-size */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    margin-top: 2rem; /* Optional: Add margin-top to create more space */
+}
+
+/* Nav-bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #f8f8f8;
+    padding: 1rem;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #1B5E20; /* Dark Green for nav links */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    border: 1px solid #66BB6A; /* Light Green border */
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #43A047; /* Medium Green on hover */
+    color: #fff;
+}
+
+/* Masthead */
+.masthead {
+    position: relative;
+    height: 300px; /* Adjust this height as needed */
+    background-color: #66BB6A; /* Light Green background */
+    overflow: hidden;
+}
+
+.masthead img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.masthead h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* White text color for contrast */
+    font-family: 'Merriweather', serif;
+    font-size: 2rem; /* Font size for masthead heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+/* Main Content */
+.buttons {
+    display: flex;
+    /* justify-content: center; */
+    margin: 2rem 0;
+    align-self: flex-start;
+    /* max-width: 60rem; */
+}
+
+.buttons button {
+    padding: 1rem;
+    margin: 0 0.5rem;
+    background-color: #43A047; /* Medium Green for buttons */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1rem; /* Font size for buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.buttons button:hover {
+    background-color: #1B5E20; /* Dark Green on hover */
+}
+
+#active-button {
+    background-color: #1B5E20; /* Dark Green for active button */
+}
+
+#content {
+    text-align: left;
+    padding: 2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Content Image */
+#content img {
+    width: 200px; 
+    height: 200px; 
+    max-width: 100%; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto 1rem;
+}
+main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60rem;
+}
+
+/* Footer */
+footer {
+    text-align: left;
+    padding: 1rem;
+    background-color: #f8f8f8;
+}
+
+footer a {
+    color: #1B5E20; /* Dark Green for footer links */
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem; /* Font size for footer links */
+}
+
+footer a:hover {
+    color: #66BB6A; /* Light Green on hover */
+}
+
+/* Tablet/Desktop View */
+@media (min-width: 30rem) {
+    body {
+        font-size: 1rem; /* Increase font-size for larger screens */
+    }
+
+    .masthead h1 {
+        font-size: 2.5rem; /* Adjust font-size for larger screens */
+    }
+
+    #content img {
+        float: left;
+        margin-right: 1rem;
+    }
+}
+
+/* Adjustments for Mobile Screens */
+@media (max-width: 30rem) {
+    body {
+        font-size: 0.75rem; /* Mobile font-size */
+        text-align: left; /* Align everything left */
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        border-bottom: 1px solid #ccc;
+        text-align: left; /* Align navigation links left */
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 1rem;
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center; /* Center buttons horizontally */
+        margin-bottom: 1rem; /* Add margin bottom for spacing */
+    }
+
+    .buttons button {
+        margin: 0 0.5rem; /* Adjust button margin */
+    }
+
+    #content {
+        padding: 1rem;
+    }
+
+    #content img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
